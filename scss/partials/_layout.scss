@@ -1,0 +1,54 @@
+$row-max-width: 1200px;
+$sidebar-width: 300px;
+$gutters: 10px;
+
+.row {
+  max-width: $row-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-left: $gutters;
+  padding-right: $gutters;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &.expanded {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &.has-sidebar {
+    @include breakpoint(large) {
+      padding-right: $sidebar-width;
+    }
+    .siteContent-body {
+      @include breakpoint(large) {
+        padding-right: $gutters*2;
+      }
+    }
+  }
+}
+.siteContent-body {
+  margin-top: 20px;
+  @include breakpoint(large) {
+    float: left;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.siteContent-side {
+  position: relative;
+  margin-top: 48px;
+  @include breakpoint(large) {
+    float: left;
+    width: $sidebar-width;
+    margin-left: -$sidebar-width;
+    left: $sidebar-width;
+  }
+}
+
+.sidebarBox {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,114 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?7vzpxd');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?7vzpxd#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?7vzpxd') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?7vzpxd') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?7vzpxd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-next {
+  &:before {
+    content: $icon-next;
+  }
+}
+.icon-back {
+  &:before {
+    content: $icon-back;
+  }
+}
+.icon-pin {
+  &:before {
+    content: $icon-pin;
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-tumblr {
+  &:before {
+    content: $icon-tumblr;
+  }
+}
+.icon-pinterest {
+  &:before {
+    content: $icon-pinterest;
+  }
+}
+.icon-picture {
+  &:before {
+    content: $icon-picture;
+  }
+}
+.icon-line-graph {
+  &:before {
+    content: $icon-line-graph;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-equalizer {
+  &:before {
+    content: $icon-equalizer;
+  }
+}
+.icon-dribbble {
+  &:before {
+    content: $icon-dribbble;
+  }
+}
+.icon-computer-ok {
+  &:before {
+    content: $icon-computer-ok;
+  }
+}
+.icon-bullseye {
+  &:before {
+    content: $icon-bullseye;
+  }
+}
+.icon-book {
+  &:before {
+    content: $icon-book;
+  }
+}
+

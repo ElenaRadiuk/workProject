@@ -1,0 +1,70 @@
+.howwork__btn {
+  margin-top: 20px;
+  @include breakpoint(medium) {
+    margin-left: 50px;
+  }
+}
+
+
+.urserviceList-item {
+  margin-bottom: 40px;
+  .urserviceList-item__img {
+    float: none;
+    margin-right: 40px;
+    width: 100%;
+    max-height: 165px;
+    overflow: hidden;
+    position: relative;
+    @include breakpoint(medium) {
+      float: left;
+      width: 350px;
+      max-height: none;
+      height: 165px;
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, #f38181, #fce38a);
+      transition: opacity $transitionSpeed-default ease;
+      opacity: 0.5;
+    }
+
+    &.imgRight {
+      float: none;
+      margin-right: 0;
+      margin-left: 0;
+      @include breakpoint(medium) {
+        float: right;
+        margin-left: 40px;
+      }
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: none;
+      width: 100%;
+      @include breakpoint(medium) {
+        max-width: 350px;
+      }
+    }
+  }
+  h4 {
+    margin-top: 20px;
+    @include breakpoint(medium) {
+      margin-top: 0;
+    }
+  }
+  .urserviceList-item__text {
+    margin-bottom: 15px;
+    @include breakpoint(medium) {
+      margin-top: 25px;
+    }
+  }
+}
+
+

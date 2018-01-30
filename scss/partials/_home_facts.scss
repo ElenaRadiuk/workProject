@@ -1,0 +1,25 @@
+.facts-inner {
+  .facts-inner-item {
+    width: 100%;
+    padding: 20px 0;
+    @include breakpoint(medium) {
+    float: left;
+    width: 50%;
+    }
+    @include breakpoint(large) {
+      width: 20%;
+      padding: 80px 0;
+    }
+  }
+
+  span {
+    display: block;
+    font-family: $font-montserratBold;
+    font-size: $fontSize-bannerLarge;
+    line-height: 72px;
+    padding-bottom: 10px;
+    @include breakpoint(medium) {
+    padding-bottom: 20px;
+    }
+  }
+}

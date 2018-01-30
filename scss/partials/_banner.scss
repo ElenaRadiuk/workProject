@@ -1,0 +1,251 @@
+.teasers {
+  color: $white;
+  text-align: center;
+  min-height: 240px;
+  @include breakpoint(medium) {
+    min-height: 500px;
+  }
+  @include breakpoint(large) {
+    min-height: 920px;
+  }
+
+  .teasers-item {
+    //height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url("../img-uploads/bg_banner.jpg") no-repeat 0 0;
+    min-height: 310px;
+    background-position: center;
+    background-size: cover;
+    @include breakpoint(smallHalf) {
+      min-height: 285px;
+    }
+    @include breakpoint(medium) {
+      min-height: 550px;
+    }
+    @include breakpoint(large) {
+      min-height: 1000px;
+    }
+  }
+}
+  .banner-wrapper{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    @include breakpoint(medium) {
+      top: 70px;
+    }
+    @include breakpoint(large) {
+      top: 235px;
+    }
+
+    .banner__title {
+      font-family: $font-kaushanScript;
+      font-size: 22px;
+      padding-bottom: 20px; //60px
+      @include breakpoint(medium) {
+        font-size: 26px;
+        padding-bottom: 50px;
+      }
+      @include breakpoint(large) {
+        font-size: $fontSize-bannerLarge;
+        line-height: 70px;
+      }
+    }
+
+    .banner__text {
+      font-family: $font-montserratBold;
+      font-size: 26px;
+      line-height: 30px;
+      @include breakpoint(medium) {
+        font-size: 32px;
+      }
+      @include breakpoint(large) {
+        font-size: 145px;
+        line-height: 145px;
+      }
+      @include breakpoint(xlarge) {
+        font-size: $fontSize-bannerLargest;
+        line-height: 145px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+
+
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 94%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    font-family: $font-montserratRegular;
+    font-size: $fontSize-large;
+    background: none;
+    @include breakpoint(medium) {
+      min-width: 383px;
+      top: 90px;
+    }
+    @include breakpoint(large) {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      width: auto;
+      height: 84px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: -85px;
+      text-align: center;
+      background: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      display: block;
+      border-top: solid 3px $white;
+      transition: color $transitionSpeed-default ease-in-out;
+      font-size: $fontSize-large;
+      color: $white;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70px;
+          height: 3px;
+          background-color: $red--element;
+        }
+      }
+
+    }
+    & > ul {
+      min-width: 182px;
+      & > li {
+        position: relative;
+        width: 200px;
+        text-align: left;
+        @include breakpoint(large) {
+          width: 230px;
+          display: inline-block;
+        }
+        @include breakpoint(xlarge) {
+          width: 275px;
+          display: inline-block;
+        }
+        &:last-child {
+           a {
+             margin-right: 0;
+            }
+          }
+
+          a {
+            margin-right: 30px;
+            padding: 4px 16px;
+
+            @include breakpoint(medium) {
+              padding: 10px 15px 10px 18px;
+            }
+            @include breakpoint(large) {
+              padding: 25px 0;
+            }
+            span {
+              font-family: $font-montserratBold;
+              font-size: $fontSize-larger;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+    }
+
+
+//banner about-us
+
+.teasers-aboutus {
+  color: $white;
+  text-align: center;
+  min-height: 235px;
+  @include breakpoint(medium) {
+    min-height: 420px;
+  }
+  @include breakpoint(large) {
+    min-height: 620px;
+  }
+
+  .teasers-item-aboutus {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    //background: url("../img-uploads/bg_banner.jpg") repeat 0 0;
+    //min-height: 310px;
+    //height: 310px;
+    overflow: hidden;
+    //background-position: center;
+    //background-size: cover;
+    @include breakpoint(smallHalf) {
+      min-height: 285px;
+      height: 285px;
+    }
+    @include breakpoint(medium) {
+      min-height: 500px;
+      height: 500px;
+    }
+    @include breakpoint(large) {
+      min-height: 700px;
+      height: 700px;
+    }
+  }
+  img {
+  height: auto;
+  }
+}
+
+.teasers-item-aboutus__bg {
+  height: 280px;
+  @include breakpoint(smallHalf) {
+    min-height: 300px;
+    height: 300px;
+  }
+  @include breakpoint(medium) {
+    min-height: 500px;
+    height: 500px;
+  }
+  @include breakpoint(large) {
+    min-height: 700px;
+    height: 700px;
+  }
+}
+
+.banner-wrapper-aboutus {
+  top: 120px;
+  @include breakpoint(medium) {
+    top: 150px;
+  }
+  @include breakpoint(large) {
+    top: 235px;
+  }
+}
+
+
+
+
+

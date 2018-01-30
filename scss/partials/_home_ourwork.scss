@@ -1,0 +1,108 @@
+.ourwork {
+  .item-margintop {
+    margin-top: 60px;
+  }
+}
+
+.homegalery {
+  padding: 30px 0 0;
+  @include breakpoint(medium) {
+    padding: 60px 0 0;
+  }
+}
+
+.homegalery-item {
+  float: left;
+  width: 50%;
+  margin-top: -5px;
+  @include breakpoint(medium) {
+    width: 25%;
+  }
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    .homegalery-item-title {
+      opacity: 1;
+    }
+    .homegalery-item-img {
+      &:before {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+  .homegalery-item-inner {
+    position: relative;
+
+    .homegalery-item-title {
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      color: $white;
+      opacity: 0;
+      transition: opacity $transitionSpeed-default ease;
+      @include breakpoint(smallHalf) {
+        bottom: 20%;
+      }
+      @include breakpoint(medium) {
+        bottom: 30%;
+      }
+      @include breakpoint(large) {
+        bottom: 40%;
+      }
+      .homegalery-item-title__name {
+        font-family: $font-montserratRegular;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      .homegalery-item-title__descrip {
+        display: block;
+        font-family: $font-robotoItalic;
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      img {
+        max-height: 32px;
+        width: auto;
+      }
+      .homegalery-item-title__icon {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 32px;
+      }
+      a {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+
+    .homegalery-item-img {
+      max-height: 385px;
+      overflow: hidden;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 4px; //4px
+        background: linear-gradient(to bottom, #f38181, #fce38a);
+        opacity: 0;
+        transition: opacity $transitionSpeed-default ease;
+      }
+    }
+    img {
+      width: 100%;
+      margin: 0;
+    }
+    a {
+      display: block;
+      &:hover {
+        color: $white;
+      }
+    }
+  }

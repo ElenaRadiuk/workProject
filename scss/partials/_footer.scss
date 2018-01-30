@@ -1,0 +1,115 @@
+.siteFooter {
+  color: $grey--dark;
+  padding-top: 0px;
+  @include breakpoint(medium) {
+    padding-top: 90px;
+  }
+
+  .footer-container {
+    border-bottom: 1px solid $grey--light3;
+  }
+
+   .siteFooter-col {
+    width: 100%;
+    @include breakpoint(medium) {
+      width: 50%;
+     }
+    }
+
+    h1 {
+      font-family: $font-montserratBold;
+      font-size: $fontSize-logoFooter;
+      color: $grey--light;
+      margin-bottom: 40px;
+    }
+
+    .siteFooter-text {
+      max-width: 480px;
+      font-family: $font-montserratRegular;
+      font-size: $fontSize-base;
+      line-height: 24px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid $grey--light2;
+    }
+
+  .footer__copyright {
+    padding: 25px 0;
+    font-size: $fontSize-small;
+    text-transform: capitalize;
+  }
+}
+
+.subscribeForm {
+  position: relative;
+  margin: 30px 0 50px;
+  @include breakpoint(medium) {
+    margin: 70px 0;
+  }
+  .form-item {
+    display: inline-block;
+    .visually-hidden {
+      display: none;
+    }
+
+    input[type="email"] {
+      padding: 8px 15px 9px;
+      margin-right: 0;
+      border: 1px solid $grey--light2;
+      width: 160px;
+      height: 41px;
+      outline: none;
+      @include breakpoint(medium) {
+        width: 190px;
+      }
+      @include breakpoint(large) {
+        width: 230px;
+      }
+    }
+    input::placeholder {
+      font-family: $font-robotoItalic;
+      color: $grey--light2;
+      text-transform: capitalize;
+    }
+
+  }
+
+  .item__btn {
+    position: relative;
+    left: -5px;
+    height: 41px;
+  }
+}
+
+.siteFooter-social {
+  padding-top: 20px;
+  @include breakpoint(smallHalf) {
+    text-align: left;
+  }
+
+  span {
+    padding-right: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: $green--light;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $red--element;
+    }
+    span {
+      font-size: 22px;
+    }
+  }
+
+  .siteFooter-social__title {
+    display: block;
+    font-size: $fontSize-base;
+    font-family: $font-robotoItalic;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    @include breakpoint(medium) {
+      display: inline-block;
+    }
+  }
+}
+

@@ -1,0 +1,82 @@
+.whoweare-inner {
+  margin-bottom: 20px;
+  @include breakpoint(medium) {
+    margin-bottom: 60px;
+  }
+  .item-margintop {
+    margin-top: 0;
+    @include breakpoint(medium) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.recruiting-table {
+  margin: auto;
+  td {
+    height: 75px;
+    border-bottom: 1px solid $grey--light3;
+  }
+  .recruiting-inner__items {
+    font-family: $font-montserratLight;
+    font-size: $fontSize-base;
+    color: $black--text;
+    span {
+      color: $green--light;
+      font-size: $fontSize-largest;
+      padding-right: 15px;
+    }
+    .recruiting-inner__items-text {
+      padding-left: 15px;
+      text-align: left;
+    }
+  }
+}
+
+
+.factsvideo-wrapper {
+  //padding-bottom: 45px;
+  .factsvideo-inner {
+    position: relative;
+    background: url("../img-uploads/bg_contactUs2.jpg")  no-repeat 0 0;
+    min-height: 270px;
+    background-position: center;
+    background-size: cover;
+
+    .factsvideo-inner__gradient {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #95e1d3;
+      opacity: 0.9;
+    }
+
+    .factsvideo_content {
+      position: relative;
+      padding-top: 85px;
+      padding-bottom: 85px;
+
+        .factsvideo_content__title {
+          padding: 0 10px;
+          color: $white;
+          font-size: $fontSize-larger;
+          font-family: $font-montserratBold;
+          margin-bottom: 25px;
+          @include breakpoint(medium) {
+            font-size: $fontSize-largest;
+          }
+        }
+    }
+  }
+  .factsvideo_content__video {
+    display: none;
+    padding: 40px 10px 0;
+    video {
+      width: 100%;
+      max-width: 570px;
+    }
+  }
+}

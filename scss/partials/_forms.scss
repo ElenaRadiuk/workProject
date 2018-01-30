@@ -1,0 +1,113 @@
+button,
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 7px 20px 7px;
+    font-family: $font-montserratBold;
+    font-size: $fontSize-xsmall;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    border: 3px solid $orange;
+    background: none;
+    color: $orange;
+    transition: all .3s ease-out;
+    appearance: none;
+    &:hover,
+    &:active {
+        text-decoration: none;
+        border: 3px solid $red--element;
+        color: $red--element;
+    }
+    @include breakpoint(medium) {
+      font-size: $fontSize-small;
+      padding: 11px 30px 12px;
+    }
+}
+.btn--fullWidth {
+    width: 100%;
+}
+.btn--white {
+    border: 3px solid $white;
+    color: $white;
+    white-space: nowrap;
+    &:hover {
+        color: $red--element;
+        border-color: $red--element;
+        background: none;
+    }
+}
+
+.btn--thin {
+    font-family: $font-montserratRegular;
+    font-size: $fontSize-small;
+    border: 1px solid $red--element;
+    color: $red--element;
+    white-space: nowrap;
+    &:hover {
+        color: $red--element;
+        border-color: $red--element;
+        border: 1px solid $red--element;
+        background: none;
+    }
+}
+
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn--subscribe {
+    display: inline-block;
+    margin: 0;
+    height: 41px;
+    padding: 13px 30px 13px;
+    font-family: $font-montserratBold;
+    font-size: $fontSize-xsmall;
+    text-transform: uppercase;
+    border: 1px solid $green--light;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    background: $green--light;
+    transition: all .3s ease-out;
+    appearance: none;
+    @include breakpoint(medium) {
+        //padding-top: 12px;
+    }
+    &:hover {
+        border-color: $red--element;
+        background: $red--element;;
+    }
+}
+
+.divider-white {
+    display: inline-block;
+    width: 60px;
+    border-bottom: 3px solid $white;
+    margin-top: 30px; //70
+    margin-bottom: 20px;
+    @include breakpoint(medium) {
+        margin-top: 60px; //70
+        margin-bottom: 50px;
+    }
+}
+
+.divider-red {
+    display: inline-block;
+    width: 60px;
+    border-bottom: 3px solid $red--element;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @include breakpoint(medium) {
+        margin-top: 40px; //70
+        margin-bottom: 50px;
+    }
+}
