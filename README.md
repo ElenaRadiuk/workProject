@@ -1,1 +1,1 @@
-## Norske Project ##
+## Hyperion Project ##
